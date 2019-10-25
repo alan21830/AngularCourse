@@ -23,11 +23,13 @@ export class ValuesComponent implements OnInit{
     //metodo per recuperare i dati dal db
     getValueFromDb()
     {
-        this.http.get('https://10.46.90.240/ClickECollect-Cockpit-BE/anagrafica/reti').subscribe(response => {
+
+        //https://localhost:44389/api/values
+        this.http.get('https://localhost:44389/api/user').subscribe(response => {
         this.values=response;
     }, error =>{console.log(error);
         });
-    }
+    }  
 }
  
 
