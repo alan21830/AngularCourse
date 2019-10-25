@@ -1,0 +1,11 @@
+<div class="row">
+        <div class="col-md-3">
+        <form [formGroup]="mappingForm" (ngSubmit)="register()"  #myform >
+          <input class="form-control mr-sm-2 mt-2"   formControlName="username" >
+         <br>
+          <input class="form-control mr-sm-2 mt-2"  formControlName="password" >
+         <br>
+         <button type="button"  (click)="insert()">Invia</button>
+        </form>
+    </div>
+</div>
